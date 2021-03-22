@@ -11,7 +11,7 @@
 #define SWITCH 12
 
 #define TIME_OFFSET 1000 // 1 second
-#define TIME_MULT 30 * 60 // about 30 min
+#define TIME_MULT 120 * 60 // about 2 hours
 
 #define CUR_OFFSET 0
 #define CUR_MULT 0.5
