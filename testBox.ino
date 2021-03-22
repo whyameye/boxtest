@@ -42,7 +42,6 @@ void setup() {
 
 void loop() {
   int16_t current = 0, tmp;
-  uint32_t start = millis();
   static uint32_t timeTurnedOn;
   static boolean switchIsOff = true;
   static boolean testTime = true;
@@ -70,7 +69,8 @@ void loop() {
     }
   }
   digitalWrite(RELAY,LOW);
-  
+
+  uint32_t start = millis();
   while (millis() < (start + 20)) {
     tmp = analogRead(CUR_SENSE);
     current = max(current, tmp);
